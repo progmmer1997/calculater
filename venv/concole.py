@@ -1,8 +1,7 @@
 print("Добро пожаловать в калькулятор")
 firstNumber = int(input("Введите первое чисо:" + ""))
-print("Выбирите нужную операцию: "+" ")
-operation=input("При нажатии 0 будет выведена сумма чисел \n  1- разность чисел \n 2 -произведение чисел \n 3-частное чисел \n 4-целочисленное деление\n 5-возведеение в степень")
-if operation==0:
+operation=input(" Выбирите нужную операцию. При нажатии 0 будет выведена сумма чисел \n  1- разность чисел \n 2 -произведение чисел \n 3-частное чисел \n 4-целочисленное деление\n 5- остаток от делкения\n 6-возведеение в степень \n")
+if operation=="0":
    secondsummand =int(input("Введите второе сллагаемое:"+" "))
    print("Сумма введенных вами чисел равна:"+" "+str(firstNumber+secondsummand))
 elif operation=="1":
@@ -10,7 +9,7 @@ elif operation=="1":
     print("Разность введенных вами чисел равна:"+" "+str(firstNumber-deductible))
 elif operation=="2":
    multiplier = int(input("Ввведите второй множитель: " + " "))
-   print("Произведение ваших чисел равно:"+" "+str(firstNumber*secondNumber))
+   print("Произведение ваших чисел равно:"+" "+str(firstNumber*multiplier))
 elif operation=="3":
     f_divisior = int(input("Введите делитель:" + " "))
     f_division_result=firstNumber/f_divisior  #  переменная содержит число с плавающей точкой
@@ -21,7 +20,7 @@ elif operation=="4":
     print("Частное ваших чисел сотавляет:"+" "+str(i_division_result))
 elif operation=="5":
     r_divisior=int(input("Введите делитель:"+" "))
-    r_division_result=firstNumber%r_divisior 
+    r_division_result=firstNumber%r_divisior
     print("Остаток от деления ваших чисел равен:"+""+str(r_division_result))
 elif operation=="6":
     extent=int(input("Введите степень,в которую хотите возвести число"))
